@@ -1,0 +1,11 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "this is a portfolio to present myself and my skills",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/sass/main.scss:style.css --style expanded"
+  },
+  "author": "clara lancelle",
+  "license": "ISC"
+}
