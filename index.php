@@ -17,7 +17,7 @@ if (!empty($_POST)) {
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Portfolio et cv de lancelle clara, développeuse web / developpeur web">
+    <meta name="description" content="Portfolio et CV de lancelle clara, développeuse web en formation à La Manu (Compiègne).">
     <link rel="icon" href="<?php echo BASE_URL . '/assets/img/favicon.png' ?>" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <Link href="style.css" rel="stylesheet" type="text/css" />
@@ -30,8 +30,9 @@ if (!empty($_POST)) {
     <header class="nav_ban">
         <div class="navbar">
             <figure class="navbar__items__logo">
-                <a id="home_link" href="#" title="lien vers la page d'accueil"><img class="logo"
-                        src="<?php echo BASE_URL . '/assets/img/logo.png' ?>" alt="logo"></a>
+                <a id="home_link" href="#" title="lien vers la page d'accueil">
+                    <img class="logo" src="<?php echo BASE_URL . '/assets/img/logo.png' ?>" alt="logo du portfolio de Lancelle Clara">
+                    </a>
             </figure>
 
             <div id="menu-button">
@@ -108,11 +109,11 @@ if (!empty($_POST)) {
                         fonctionnalitées mais aussi, à de nouvelles problématiques. <br>
                     </p>
                     <figure class="body__img myPic">
-                        <img src="<?php echo BASE_URL . '/assets/img/photo_cv.png' ?>" alt="photo de Clara lancelle">
+                        <img src="<?php echo BASE_URL . '/assets/img/photo_cv.png' ?>" alt="Photo d'identité / de profil de lancelle Clara">
                     </figure>
                 </div>
                 <div class="aboutMe__content__btn btn">
-                    <a href="<?php echo BASE_URL . '/assets/img/cv_lancelle_clara_formation.pdf' ?>" class="cv__btn"
+                    <a href="<?php echo BASE_URL . '/assets/img/cv_lancelle_clara_2.pdf' ?>" class="cv__btn"
                         target="_blank" title="CV de clara lancelle"> Mon CV <svg xmlns="http://www.w3.org/2000/svg"
                             width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
@@ -135,12 +136,38 @@ if (!empty($_POST)) {
                         <div class="card-skills__content">
                             <figure class="card-skills__content__img">
                                 <img class="logo"
-                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg/1280px-CSS3_and_HTML5_logos_and_wordmarks.svg.png"
-                                    alt="logo HTML/CSS">
+                                    src="assets/img/HTML5_logo.png"
+                                    alt="logo HTML5">
                             </figure>
-                            <h5>HTML & CSS</h5>
+                            <h5>HTML5</h5>
                             <div class="grade">
-                                <div class="progress 80"><p> 80% </p></div> 
+                                <div class="progress p85"><p> 85% </p></div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-skills">
+                        <div class="card-skills__content">
+                            <figure class="card-skills__content__img">
+                                <img class="logo"
+                                    src="assets/img/CSS3_logo.png"
+                                    alt="logo CSS3">
+                            </figure>
+                            <h5>CSS3</h5>
+                            <div class="grade">
+                                <div class="progress p85"><p> 85% </p></div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-skills">
+                        <div class="card-skills__content">
+                            <figure class="card-skills__content__img">
+                                <img class="logo"
+                                    src="assets/img/JavaScript_logo.png"
+                                    alt="logo JS">
+                            </figure>
+                            <h5>JavaScript</h5>
+                            <div class="grade">
+                                <div class="progress p60"><p> 60% </p></div> 
                             </div>
                         </div>
                     </div>
@@ -152,62 +179,19 @@ if (!empty($_POST)) {
                             </figure>
                             <h5>PHP</h5>
                             <div class="grade">
-                                <p>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star"></i>
-                                </p>
+                                <div class="progress p70"><p> 70% </p></div> 
                             </div>
                         </div>
                     </div>
                     <div class="card-skills">
                         <div class="card-skills__content">
                             <figure class="card-skills__content__img">
-                                <img class="logo"
-                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png"
-                                    alt="logo SCSS">
-                            </figure>
-
-                            <h5>SASS</h5>
-                            <div class="grade">
-                                <p>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star"></i>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-skills">
-                        <div class="card-skills__content">
-                            <figure class="card-skills__content__img">
-                                <img class="logo"
-                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1200px-Git_icon.svg.png"
-                                    alt="logo Git">
-                            </figure>
-                            <h5>GIT</h5>
-                            <div class="grade">
-                                <p>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star"></i>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-skills">
-                        <div class="card-skills__content">
-                            <figure class="card-skills__content__img">
-                                <img class="logo" src="https://planet.mysql.com/images/planet-logo.svg"
+                                <img class="logo" src="assets/img/mySql_logo.png"
                                     alt="logo MySQL">
                             </figure>
                             <h5>MySQL</h5>
                             <div class="grade">
-                                <p>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star"></i>
-                                </p>
+                                <div class="progress p60"><p> 60% </p></div> 
                             </div>
                         </div>
                     </div>
@@ -215,36 +199,55 @@ if (!empty($_POST)) {
                         <div class="card-skills__content">
                             <figure class="card-skills__content__img">
                                 <img class="logo"
-                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1024px-Bootstrap_logo.svg.png"
-                                    alt="logo Bootstrap">
-                            </figure>
-                            <h5>Bootstrap</h5>
-                            <div class="grade">
-                                <p>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star"></i>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-skills">
-                        <div class="card-skills__content">
-                            <figure class="card-skills__content__img">
-                                <img class="logo"
-                                    src="https://www.bing.com/th?id=Ab7123a88c6aaa07cf296e34ca3671f69&w=188&h=132&c=7&o=6&pid=SANGAM"
+                                    src="assets/img/php_my_admin_logo.png"
                                     alt="logo PHPMyAdmin">
                             </figure>
                             <h5>PHPMyAdmin</h5>
                             <div class="grade">
-                                <p>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star-fill"></i>
-                                    <i class="bi bi-star"></i>
-                                </p>
+                                <div class="progress p70"><p> 70% </p></div> 
                             </div>
                         </div>
                     </div>
+                    <div class="card-skills">
+                        <div class="card-skills__content">
+                            <figure class="card-skills__content__img">
+                                <img class="logo"
+                                    src="assets/img/sass_logo.png"
+                                    alt="logo SCSS">
+                            </figure>
+                            <h5>SASS</h5>
+                            <div class="grade">
+                                <div class="progress p80"><p> 80% </p></div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-skills">
+                        <div class="card-skills__content">
+                            <figure class="card-skills__content__img">
+                                <img class="logo"
+                                    src="assets/img/Git_logo.png"
+                                    alt="logo Git">
+                            </figure>
+                            <h5>GIT</h5>
+                            <div class="grade">
+                                <div class="progress p60"><p> 60% </p></div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-skills">
+                        <div class="card-skills__content">
+                            <figure class="card-skills__content__img">
+                                <img class="logo"
+                                    src="assets/img/Bootstrap_logo.png"
+                                    alt="logo Bootstrap">
+                            </figure>
+                            <h5>Bootstrap</h5>
+                            <div class="grade">
+                                <div class="progress p85"><p> 85% </p></div> 
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
                 <?php $i = 0; ?>
                 <div class="skills__degree">
@@ -271,8 +274,7 @@ if (!empty($_POST)) {
                                                     d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
                                                 <path
                                                     d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z" />
-                                                <path fill-rule="evenodd"
-                                                    d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1h5V3.5a.5.5 0 0 1 .5-.5z" />
+                                                
                                             </svg>
                                         </a>
                                         <?php $i++; ?>
@@ -300,8 +302,7 @@ if (!empty($_POST)) {
                                                     d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
                                                 <path
                                                     d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z" />
-                                                <path fill-rule="evenodd"
-                                                    d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1h5V3.5a.5.5 0 0 1 .5-.5z" />
+                                                
                                             </svg>
                                         </a>
                                         <?php $i++; ?>
@@ -329,8 +330,6 @@ if (!empty($_POST)) {
                                                     d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
                                                 <path
                                                     d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z" />
-                                                <path fill-rule="evenodd"
-                                                    d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1h5V3.5a.5.5 0 0 1 .5-.5z" />
                                             </svg>
                                         </a>
                                         <?php $i++; ?>
@@ -358,8 +357,6 @@ if (!empty($_POST)) {
                                                     d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
                                                 <path
                                                     d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z" />
-                                                <path fill-rule="evenodd"
-                                                    d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1h5V3.5a.5.5 0 0 1 .5-.5z" />
                                             </svg>
                                         </a>
                                         <?php $i++; ?>
@@ -387,8 +384,7 @@ if (!empty($_POST)) {
                                                     d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
                                                 <path
                                                     d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z" />
-                                                <path fill-rule="evenodd"
-                                                    d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1h5V3.5a.5.5 0 0 1 .5-.5z" />
+                                                
                                             </svg>
                                         </a>
                                         <?php $i++; ?>
@@ -417,15 +413,14 @@ if (!empty($_POST)) {
                                                     d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
                                                 <path
                                                     d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z" />
-                                                <path fill-rule="evenodd"
-                                                    d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1h5V3.5a.5.5 0 0 1 .5-.5z" />
+                                                
                                             </svg>
                                         </a>
                                     </p>
                                 </figure>
+                                <div id="réalisations"></div>
                             </div>
                         </div>
-                        <div id="réalisations"></div>
                     </div>
                 </div>
             </div>
@@ -499,7 +494,7 @@ if (!empty($_POST)) {
                     <div class="section-divider"></div>
                 </header>
                 <div class="contact__content__body body--small">
-                    <div class="link svg-inline">
+                    <div class="link svg">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-envelope"
                             viewBox="0 0 16 16">
                             <path
@@ -508,7 +503,7 @@ if (!empty($_POST)) {
                         <a class="contact__link" href="mailto : lancelle.clara@hotmail.com"
                             title="lien vers ma boite mail">Email : lancelle.clara@hotmail.com </a>
                     </div>
-                    <div class="link svg-inline">
+                    <div class="link svg">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-linkedin"
                             viewBox="0 0 16 16">
                             <path
@@ -520,7 +515,7 @@ if (!empty($_POST)) {
                     </div>
                 </div>
                 <div class="contact__content__form">
-                    <div class="form__title svg-inline">
+                    <div class="form__title svg">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-chat-square-text" viewBox="0 0 16 16">
                             <path

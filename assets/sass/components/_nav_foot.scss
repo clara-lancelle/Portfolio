@@ -1,12 +1,12 @@
 // nav + banner
 
 
-header.nav_ban{
-    text-align:center;
+header.nav_ban {
+    text-align: center;
 
-    .navbar{
+    .navbar {
         justify-content: center;
-        background-color: rgba(27, 25, 41, 0.950);
+        background-color: $nav_foot;
         width: -webkit-fill-available;
         top: 0px;
         z-index: 1;
@@ -16,67 +16,69 @@ header.nav_ban{
         padding: 5px;
         grid-column-gap: 30px;
 
-        @include x_smallScreen{
+        @include x_smallScreen {
             grid-auto-flow: column;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-between;
         }
 
 
-        .navbar__items__logo{
+        .navbar__items__logo {
             margin: 2px;
             grid-row: 1;
-            .logo{
+
+            .logo {
                 border-radius: 50px;
                 width: 60px;
-                @include x_smallScreen{
+
+                @include x_smallScreen {
                     width: 50px;
-                    padding:0px;
+                    padding: 0px;
                 }
             }
-        }  
+        }
 
-        nav.navbar__items{
+        nav.navbar__items {
             align-self: center;
             grid-row: 1;
-           
 
-            ul{
+
+            ul {
                 list-style: none;
                 display: inline-grid;
-                grid-template-columns: repeat(4,200px);
+                grid-template-columns: repeat(4, 200px);
                 justify-content: center;
                 align-items: center;
                 padding: 0px;
                 margin: 3px auto;
 
-                @include x_smallScreen{
+                @include x_smallScreen {
                     grid-template-columns: 1fr;
                 }
 
-                .navbar__items__link{
+                .navbar__items__link {
 
-                    a{
-                        color: #ccccce;
+                    a {
+                        color: $dark_white;
                         font-size: 20px;
-    
-                        @include smallScreen{
+
+                        @include smallScreen {
                             font-size: 18px;
                         }
-    
-                        @include x_smallScreen{
+
+                        @include x_smallScreen {
                             font-size: 15px;
                         }
 
-                        &:hover{
-                            color: rgb(255, 255, 255);
+                        &:hover {
+                            color: white;
                         }
                     }
                 }
-                
+
             }
         }
-       
+
     }
 
 
@@ -85,63 +87,72 @@ header.nav_ban{
         background-size: cover;
         justify-content: center;
         align-items: center;
-        padding: 14% 0%;
+        padding: 12rem 0%;
         display: flex;
         box-sizing: border-box;
         min-height: 500px;
         margin-top: 68px;
 
-        @include x_smallScreen{
+        @include x_smallScreen {
             text-align: center;
-            padding: 10% 4%;
+            padding: 5rem 2rem;
         }
-        
 
-        h1.banner__header__title{
-            font-size: 70px;
-            line-height: 80px;
+
+        h1.banner__header__title {
+            font-size: 4.2rem;
+            line-height: 4.2rem;
             font-weight: 700;
-            margin-bottom: 36px;
+            margin-bottom: 3rem;
             text-transform: uppercase;
             color: #0b2e5c;
-            @include x_smallScreen{
-                font-size: 40px;
+
+            @include x_smallScreen {
+                font-size: 2rem;
             }
         }
 
-        h2.banner__header__desc{
-            font-size: 40px;
-            line-height: 37px;
-            margin-bottom: 10%;
+        h2.banner__header__desc {
+            font-size: 2.5rem;
+            line-height: 3rem;
+            margin-bottom: 3rem;
             font-weight: lighter;
-            @include x_smallScreen{
-                font-size: 25px;  
+
+            @include x_smallScreen {
+                font-size: 1.5rem;
             }
+        }
+
+        h3.banner__body__welcome {
+            font-size: 2rem;
+            letter-spacing: 4px;
+            color: rgba(74, 75, 78, 0.5411764706);
+            background-color: rgba(46, 61, 98, 0.1);
+            padding: 0.3rem 7rem;
+            margin-bottom: 5rem;
+
+            @include smallScreen {
+                font-size: 1.5rem;
             }
 
-        h3.banner__body__welcome{
-            font-size:30px;
-            letter-spacing: 4px;
-            color: #aaabaf;
-            background-color: rgba(46,61,98,.1);
-            padding: 4px 14px;
-            margin-bottom: 10%;
-            @include x_smallScreen{
-                font-size: 18px;
-            }
-            @include x_smallScreen{
-                font-size: 25px;
+            @include x_smallScreen {
+                font-size: 1.3rem;
             }
 
         }
 
-        p.banner__body__desc{
-            font-size: 24px;
-            line-height: 37px;
-            margin-bottom: 5%;
-            @include x_smallScreen{
-                font-size: 18px;
+        p.banner__body__desc {
+            font-size: 1.5rem;
+            line-height: 1.3rem;
+            margin-bottom: 2rem;
+
+            @include x_smallScreen {
+                font-size: 1.2rem;
             }
+        }
+
+        a.scroll-down svg path {
+            color: $dark_blue;
         }
     }
 }
@@ -150,12 +161,12 @@ header.nav_ban{
 
 
 
-ul.logo_only{
-    display:block!important;
+ul.logo_only {
+    display: block !important;
 }
 
 
-.banner--small{
+.banner--small {
     height: 300px;
 }
 
@@ -164,81 +175,84 @@ ul.logo_only{
 
 // hamburger menu
 
-@include x_smallScreen{
+@include x_smallScreen {
 
 
 
-#menu-button{
-    background: rgb(27 25 41 / 95%);
-    width: 60px;
-    border-radius: 30px;
-    position: relative;
-    cursor: pointer;
-    transition: all linear 0.3s;
-    padding: 2px;
-    z-index: 99;
-  }
-  
-  #menu-button.active{
-    background: rgb(177 2 2);
-    color: #fff;
-  }
-  #line-1,#line-2,#line-3{
-    background: rgb(210, 211, 211);
-    width: 30px;
-    height: 6px;
-    margin: 6px auto;
-    border-radius: 2px;
-    transition: all linear 0.3s;
-   
-  }
-  
-  #line-1.active{
-  -webkit-transform: translate(0px,12px) rotate(45deg);
-  transform: translate(0px,12px) rotate(45deg);
-  }
-  
-  #line-2.active{
-  opacity: 0;
-  }
-  
-  #line-3.active{
-  -webkit-transform: translate(0px, -12px) rotate(-45deg);
-  transform: translate(0px, -12px) rotate(-45deg);
-  }
-  
-  #menu{
-    padding: 10px;
-    padding-top: 30px;
-    color: #fff;
-    font-family: arial;
-    font-size: 1.5rem;
-    display: none;
-    position: absolute;
-    top: 60px;
-    border-radius: 5px;
-    background: inherit;
-    width: inherit;
-  }
-  
-  #menu ul{
-    list-style: none;
-  }
-  
-  #menu ul li{
-    margin: 8px 0;
-  }
-  
+    #menu-button {
+        width: 60px;
+        border-radius: 30px;
+        position: relative;
+        cursor: pointer;
+        transition: all linear 0.3s;
+        padding: 2px;
+        z-index: 99;
+    }
 
-}  
+    #menu-button.active {
+        background: rgb(177 2 2);
+        color: white;
+    }
+
+    #line-1,
+    #line-2,
+    #line-3 {
+        background: rgb(210, 211, 211);
+        width: 30px;
+        height: 6px;
+        margin: 6px auto;
+        border-radius: 2px;
+        transition: all linear 0.3s;
+
+    }
+
+    #line-1.active {
+        -webkit-transform: translate(0px, 12px) rotate(45deg);
+        transform: translate(0px, 12px) rotate(45deg);
+    }
+
+    #line-2.active {
+        opacity: 0;
+    }
+
+    #line-3.active {
+        -webkit-transform: translate(0px, -12px) rotate(-45deg);
+        transform: translate(0px, -12px) rotate(-45deg);
+    }
+
+    #menu {
+        padding: 10px;
+        padding-top: 30px;
+        color: white;
+        font-family: arial;
+        font-size: 1.5rem;
+        display: none;
+        position: absolute;
+        top: 60px;
+        border-radius: 5px;
+        background: inherit;
+        width: inherit;
+    }
+
+    #menu ul {
+        list-style: none;
+    }
+
+    #menu ul li {
+        margin: 8px 0;
+    }
+
+
+}
+
 // footer
 
 
-footer{
+footer {
     width: 100%;
-    height:60px;
-    background-color: #1c26337c;
-    color:rgb(255, 255, 255);
+    height: 60px;
+    background-color: $nav_foot;
+    color: white;
     margin-bottom: 0px;
     text-align: center;
     font-size: 17px;
@@ -247,8 +261,8 @@ footer{
     justify-content: center;
     margin-top: 50px;
 
-    p{
-        
+    p {
+
         margin: 0 auto;
     }
 }

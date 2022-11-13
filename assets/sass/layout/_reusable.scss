@@ -1,3 +1,6 @@
+*{
+    color: $dark_grey;
+}
 
 ////// main
 
@@ -49,7 +52,7 @@ section.bloc--smallMargin{
     font-size:1.7rem;
     letter-spacing: 4px;
     color: $duck_blue;
-    background-color: rgba(51, 159, 209, 0.274);
+    background-color: $light_blue;
     padding: 4px 14px;
     margin-bottom: 40px;
     @include x_smallScreen{
@@ -80,11 +83,12 @@ section.bloc--smallMargin{
 
 
 h5{
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: lighter;
-    margin: 2% 0%;
+    margin: 1em 0%;
+    color: $dark_blue;
     @include x_smallScreen{
-        font-size: 16px;
+        font-size: 1.1em;
      }
 }
 
@@ -218,13 +222,16 @@ li{
     }
 }
 
-.svg-inline{
+.svg{
 
     
     align-items: center;
     display: grid;
     grid-template-columns: 26px 1fr;
     grid-column-gap: 2%;
+    path{
+        color: white;
+    }
 }  
 
 
@@ -266,7 +273,7 @@ p.return_error{
 }
 
 p.return_message{
-    color: $succes;
+    color: $success;
     
 }
 

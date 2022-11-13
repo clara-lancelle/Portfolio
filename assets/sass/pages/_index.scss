@@ -29,8 +29,8 @@ section.bloc.aboutMe {
             justify-self: center;
             grid-row: 1;
             padding: 1.4rem;
-            border-bottom: solid 2px grey;
-            border-left: 4px solid grey;
+            border-bottom: solid 2px $nav_foot;
+            border-left: 4px solid $nav_foot;
 
             img {
                 width: 250px;
@@ -44,7 +44,7 @@ section.bloc.aboutMe {
     }
 
     .aboutMe__content__btn {
-        background-color: #f7c465;
+        background-color: $wine;
         margin-left: 15%;
         margin-top: 2%;
 
@@ -53,12 +53,16 @@ section.bloc.aboutMe {
         }
 
         .cv__btn {
-            color: $dark_blue ;
+            color: white;
             display: inline-flex;
             align-items: center;
 
             .bi {
                 margin-left: 10px;
+                
+                path{
+                    color: white;
+                }
             }
         }
     }
@@ -77,6 +81,8 @@ section.bloc .skills__content {
         column-gap: 5%;
         row-gap: 5%;
         padding: 3%;
+        align-content: center;
+        justify-content: center;
 
         @include smallScreen {
             grid-template-columns: 1fr 1fr;
@@ -86,6 +92,8 @@ section.bloc .skills__content {
 
         @include x_smallScreen {
             padding: 1%;
+            grid-template-columns: 45% 45%;
+
         }
 
 
@@ -98,50 +106,68 @@ section.bloc .skills__content {
                 text-align: center;
 
                 &__img {
-                    height: 120px;
+                    height: 5rem;
+                    margin: 0.5em;
 
                     @include smallScreen {
-                        height: 70px;
+                        height: 3rem;
                     }
 
                     img {
-                        margin: 3%;
-                        width: 110px;
+                        height: 5rem;
 
                         @include smallScreen {
-                            width: 60px;
+                            height: 3rem;
                         }
                     }
-                }
-
-                h3 {
-                    font-size: 17px;
-                    color: $grey;
                 }
 
                 .grade {
                     display: block;
-                    background-color: #768185;
+                    background-color: $grey;
                     border-radius: 15px;
                     width: 15rem;
                     margin: 0.8rem;
-                
-                
+
+                    @include x_smallScreen {
+                        width: 7rem;
+                    }
+
                     .progress {
-                        background-color: $ocher;
+                        background-color: $light_green;
                         text-align: right;
                         border-radius: 15px;
-                        width: 80%;
-                        padding: 0.3rem;
+                        padding: 0.2rem;
 
-                        p{
+                        p {
                             margin: 0rem;
-                            color: white;
+                            color: $dark_grey;
                             font-size: 0.6rem;
                         }
-                
+
+                    }
+
+                    .p85 {
+                        width: 85%;
+                    }
+
+                    .p80 {
+                        width: 80%;
+                    }
+
+                    .p75 {
+                        width: 75%;
+                    }
+
+                    .p70 {
+                        width: 70%;
+                    }
+
+                    .p60 {
+                        width: 60%;
                     }
                 }
+
 
             }
         }
@@ -183,6 +209,10 @@ section.bloc .skills__content {
                         height: 200px;
                     }
 
+                    a svg path {
+                        color: $wine;
+                    }
+
                     img.degree {
                         max-width: 350px;
 
@@ -199,7 +229,7 @@ section.bloc .skills__content {
                     margin: 2% auto;
                 }
 
-               
+
             }
         }
 
@@ -223,7 +253,7 @@ section.bloc .skills__content {
 }
 
 svg.bi.bi-zoom-in {
-    color: $ocher;
+    color: $wine;
     height: 1.2em;
 
     &:hover {
@@ -305,7 +335,7 @@ section.bloc .achiev__content {
                 grid-row: 3;
                 grid-column: 2;
                 font-size: 18px;
-                color: $yellow;
+                color: $wine;
                 display: grid;
                 grid-template-rows: 1fr 1fr;
                 margin-left: 2%;
@@ -329,16 +359,20 @@ section.bloc .achiev__content {
                             margin-left: 0px;
                         }
 
-                        .bi {
-                            color: $yellow;
-                            width: 2.5em;
-                            height: 2.5em;
+                        svg {
+                            height: 2rem;
+                            width: 2rem;
 
-                            &:hover {
-                                transform: scale(1.2);
+                            path {
+                                color: $wine;
                             }
                         }
+
+                        &:hover {
+                            transform: scale(1.2);
+                        }
                     }
+
 
                     @include xx_smallScreen {
                         display: block;
@@ -351,12 +385,11 @@ section.bloc .achiev__content {
                     a {
                         font-size: 1rem;
                         font-style: oblique;
-                        color: darkgrey;
+                        color: $wine;
                         padding-left: 4px;
 
                         &:hover {
-                            font-style: normal;
-                            color: #0b2e5c;
+                            color: $light_blue;
                         }
                     }
                 }
@@ -377,35 +410,43 @@ section.bloc .contact__content {
 
     &__body {
         display: grid;
-        grid-auto-flow: row;
-        row-gap: 25px;
+        grid-auto-flow: column;
         margin-bottom: 3%;
-        padding: 6px;
+        padding: 0.5rem;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
 
         .link {
             font-size: 1rem;
+            background-color: $dark_blue;
+            padding: 1rem;
 
-
-            &:hover {
-                .bi {
-                    color: $ocher;
-                }
-
-                a.contact__link {
-                    color: $ocher;
-                }
-            }
 
             a.contact__link {
                 display: block;
-                color: $dark_blue ;
+                color: white;
 
             }
+
+            &:hover {
+
+
+                a.contact__link {
+                    color: $dark_white;
+                }
+            }
         }
+
+        @include smallScreen {
+            grid-auto-flow: row;
+            row-gap: 25px;
+            grid-template-columns: 1fr;
+        }
+
     }
 
     &__form {
-        background-color: $nav_foot ;
+        background-color: $dark_blue;
         padding: 1rem;
         margin: 1% 10%;
 
@@ -422,7 +463,7 @@ section.bloc .contact__content {
             grid-template-columns: 2rem 1fr;
             display: grid;
             grid-column-gap: 2%;
-            color: #ebebeb;
+            color: white;
             margin-bottom: 2%;
 
             @include x_smallScreen {
@@ -443,7 +484,7 @@ section.bloc .contact__content {
         form {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            row-gap: 1.5;
+            row-gap: 1rem;
             column-gap: 10%;
             padding: 3%;
             justify-items: center;
@@ -481,7 +522,7 @@ section.bloc .contact__content {
             button.send {
                 grid-row: 4;
                 grid-column: 1/3;
-                background-color: $light_blue ;
+                background-color: $light_blue;
                 color: white;
                 margin: auto;
                 border: none;
