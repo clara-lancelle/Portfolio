@@ -269,6 +269,9 @@ svg.bi.bi-zoom-in {
 section.bloc .achiev__content {
 
     &__body {
+
+        display: grid;
+        row-gap: 3rem;
         .card {
 
             border: $grey 2px solid;
@@ -284,6 +287,8 @@ section.bloc .achiev__content {
             &__title {
                 grid-row: 1;
                 grid-column: 2;
+                border-bottom: solid 1px $light_blue;
+                height: 4rem;
 
                 @include x_smallScreen {
                     grid-row: 1;

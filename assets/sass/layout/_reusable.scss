@@ -83,8 +83,9 @@ section.bloc--smallMargin{
 
 
 h5{
-    font-size: 1.2em;
-    font-weight: lighter;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    font-weight: bold;
     margin: 1em 0%;
     color: $dark_blue;
     @include x_smallScreen{

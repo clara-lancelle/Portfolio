@@ -56,7 +56,7 @@ if (!empty($_POST)) {
     </header>
     <main>
         <?php if(empty($_SESSION['id'])) { ?>
-        <section class="bloc">
+        <section>
             <div class="log__form">
                 <form action="#" name="log_form" method="post">
                     <div class="log__form__id">

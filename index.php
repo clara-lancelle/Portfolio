@@ -17,7 +17,8 @@ if (!empty($_POST)) {
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="Portfolio et CV de lancelle clara, développeuse web en formation à La Manu (Compiègne).">
+    <meta name="description"
+        content="Portfolio et CV de lancelle clara, développeuse web en formation à La Manu (Compiègne).">
     <link rel="icon" href="<?php echo BASE_URL . '/assets/img/favicon.png' ?>" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <Link href="style.css" rel="stylesheet" type="text/css" />
@@ -31,8 +32,9 @@ if (!empty($_POST)) {
         <div class="navbar">
             <figure class="navbar__items__logo">
                 <a id="home_link" href="#" title="lien vers la page d'accueil">
-                    <img class="logo" src="<?php echo BASE_URL . '/assets/img/logo.png' ?>" alt="logo du portfolio de Lancelle Clara">
-                    </a>
+                    <img class="logo" src="<?php echo BASE_URL . '/assets/img/logo.png' ?>"
+                        alt="logo du portfolio de Lancelle Clara">
+                </a>
             </figure>
 
             <div id="menu-button">
@@ -109,7 +111,8 @@ if (!empty($_POST)) {
                         fonctionnalitées mais aussi, à de nouvelles problématiques. <br>
                     </p>
                     <figure class="body__img myPic">
-                        <img src="<?php echo BASE_URL . '/assets/img/photo_cv.png' ?>" alt="Photo d'identité / de profil de lancelle Clara">
+                        <img src="<?php echo BASE_URL . '/assets/img/photo_cv.png' ?>"
+                            alt="Photo d'identité / de profil de lancelle Clara">
                     </figure>
                 </div>
                 <div class="aboutMe__content__btn btn">
@@ -135,39 +138,39 @@ if (!empty($_POST)) {
                     <div class="card-skills">
                         <div class="card-skills__content">
                             <figure class="card-skills__content__img">
-                                <img class="logo"
-                                    src="assets/img/HTML5_logo.png"
-                                    alt="logo HTML5">
+                                <img class="logo" src="assets/img/HTML5_logo.png" alt="logo HTML5">
                             </figure>
                             <h5>HTML5</h5>
                             <div class="grade">
-                                <div class="progress p85"><p> 85% </p></div> 
+                                <div class="progress p85">
+                                    <p> 85% </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="card-skills">
                         <div class="card-skills__content">
                             <figure class="card-skills__content__img">
-                                <img class="logo"
-                                    src="assets/img/CSS3_logo.png"
-                                    alt="logo CSS3">
+                                <img class="logo" src="assets/img/CSS3_logo.png" alt="logo CSS3">
                             </figure>
                             <h5>CSS3</h5>
                             <div class="grade">
-                                <div class="progress p85"><p> 85% </p></div> 
+                                <div class="progress p85">
+                                    <p> 85% </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="card-skills">
                         <div class="card-skills__content">
                             <figure class="card-skills__content__img">
-                                <img class="logo"
-                                    src="assets/img/JavaScript_logo.png"
-                                    alt="logo JS">
+                                <img class="logo" src="assets/img/JavaScript_logo.png" alt="logo JS">
                             </figure>
                             <h5>JavaScript</h5>
                             <div class="grade">
-                                <div class="progress p60"><p> 60% </p></div> 
+                                <div class="progress p60">
+                                    <p> 60% </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -179,75 +182,78 @@ if (!empty($_POST)) {
                             </figure>
                             <h5>PHP</h5>
                             <div class="grade">
-                                <div class="progress p70"><p> 70% </p></div> 
+                                <div class="progress p70">
+                                    <p> 70% </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="card-skills">
                         <div class="card-skills__content">
                             <figure class="card-skills__content__img">
-                                <img class="logo" src="assets/img/mySql_logo.png"
-                                    alt="logo MySQL">
+                                <img class="logo" src="assets/img/mySql_logo.png" alt="logo MySQL">
                             </figure>
                             <h5>MySQL</h5>
                             <div class="grade">
-                                <div class="progress p60"><p> 60% </p></div> 
+                                <div class="progress p60">
+                                    <p> 60% </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="card-skills">
                         <div class="card-skills__content">
                             <figure class="card-skills__content__img">
-                                <img class="logo"
-                                    src="assets/img/php_my_admin_logo.png"
-                                    alt="logo PHPMyAdmin">
+                                <img class="logo" src="assets/img/php_my_admin_logo.png" alt="logo PHPMyAdmin">
                             </figure>
                             <h5>PHPMyAdmin</h5>
                             <div class="grade">
-                                <div class="progress p70"><p> 70% </p></div> 
+                                <div class="progress p70">
+                                    <p> 70% </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="card-skills">
                         <div class="card-skills__content">
                             <figure class="card-skills__content__img">
-                                <img class="logo"
-                                    src="assets/img/sass_logo.png"
-                                    alt="logo SCSS">
+                                <img class="logo" src="assets/img/sass_logo.png" alt="logo SCSS">
                             </figure>
                             <h5>SASS</h5>
                             <div class="grade">
-                                <div class="progress p80"><p> 80% </p></div> 
+                                <div class="progress p80">
+                                    <p> 80% </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="card-skills">
                         <div class="card-skills__content">
                             <figure class="card-skills__content__img">
-                                <img class="logo"
-                                    src="assets/img/Git_logo.png"
-                                    alt="logo Git">
+                                <img class="logo" src="assets/img/Git_logo.png" alt="logo Git">
                             </figure>
                             <h5>GIT</h5>
                             <div class="grade">
-                                <div class="progress p60"><p> 60% </p></div> 
+                                <div class="progress p60">
+                                    <p> 60% </p>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="card-skills">
                         <div class="card-skills__content">
                             <figure class="card-skills__content__img">
-                                <img class="logo"
-                                    src="assets/img/Bootstrap_logo.png"
-                                    alt="logo Bootstrap">
+                                <img class="logo" src="assets/img/Bootstrap_logo.png" alt="logo Bootstrap">
                             </figure>
                             <h5>Bootstrap</h5>
                             <div class="grade">
-                                <div class="progress p85"><p> 85% </p></div> 
+                                <div class="progress p85">
+                                    <p> 85% </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
                 <?php $i = 0; ?>
                 <div class="skills__degree">
@@ -274,7 +280,7 @@ if (!empty($_POST)) {
                                                     d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
                                                 <path
                                                     d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z" />
-                                                
+
                                             </svg>
                                         </a>
                                         <?php $i++; ?>
@@ -302,7 +308,7 @@ if (!empty($_POST)) {
                                                     d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
                                                 <path
                                                     d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z" />
-                                                
+
                                             </svg>
                                         </a>
                                         <?php $i++; ?>
@@ -384,7 +390,7 @@ if (!empty($_POST)) {
                                                     d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
                                                 <path
                                                     d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z" />
-                                                
+
                                             </svg>
                                         </a>
                                         <?php $i++; ?>
@@ -413,7 +419,7 @@ if (!empty($_POST)) {
                                                     d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
                                                 <path
                                                     d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z" />
-                                                
+
                                             </svg>
                                         </a>
                                     </p>
@@ -434,56 +440,116 @@ if (!empty($_POST)) {
                     <div class="section-divider"></div>
                 </header>
                 <div class="achiev__content__body">
-                    <div class="card">
-                        <div class="card__title">
-                            <h5>Carnet de recettes partagées</h5>
-                        </div>
-                        <figure class="card__img">
-                            <img src="<?php echo BASE_URL . '/assets/img/co.png' ?>"
-                                alt="site web de lancelle clara : mon carnet de recette / my recipe booklet">
-                            <img src="<?php echo BASE_URL . '/assets/img/screen.png' ?>"
-                                alt="site web de lancelle clara : mon carnet de recette / my recipe booklet">
-                            <img src="<?php echo BASE_URL . '/assets/img/my.png' ?>"
-                                alt="site web de lancelle clara : mon carnet de recette / my recipe booklet">
-                        </figure>
-                        <div class="card__desc">
-                            <p class="body__desc">
-                                Ce site web responsive et dynamique a été réalisé en suivant les consignes d'une épreuve
-                                de BTS. <br>
-                                Avec les langages et outils suivants : HTML, CSS, PHP, MySQL, Bootstrap, PHPMyAdmin.
-                                <br><br>
-                                Fonctionalités : <br><br>
-                                - Inscription, connexion, deconnexion. <br>
-                                - Enregistrement de nouvelles recettes. <br>
-                                - Modification de ses recettes. <br>
-                                - Affichage de l'ensemble des recettes de la communautée. <br>
-                            </p>
-                        </div>
-                        <div class="card__link">
-                            <div class="github">
-                                <p> Retrouvez ce projet sur mon dêpot GitHub : </p>
-                                <a href="https://github.com/clara-lancelle/TD_Recipes" target="_blank"
-                                    title="lien vers mon site de recettes de cuisines : mon carnet de recettes / my recipes booklet">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github"
-                                        viewBox="0 0 16 16">
-                                        <path
-                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                                    </svg>
-                                </a>
+                    <article>
+                        <div class="card">
+                            <div class="card__title">
+                                <h5>Carnet de recettes partagées</h5>
                             </div>
-                            <div class="web">
-                                <p> Ou en ligne à l'adresse :
-                                    <a href="https://recipes.lancelle-clara.fr/welcome_page.php" class="website_link"
-                                        target="_blank"
-                                        title="lien vers mon site de recettes de cuisines : mon carnet de recettes / my recipes booklet">
-                                        https://recipes.lancelle-clara.fr/welcome_page.php </a>
+                            <figure class="card__img">
+                                <img src="<?php echo BASE_URL . '/assets/img/co.png' ?>"
+                                    alt="site web créé par lancelle clara : Mon carnet de recettes / My recipes booklet">
+                                <img src="<?php echo BASE_URL . '/assets/img/screen.png' ?>"
+                                    alt="site web créé par lancelle clara : mon carnet de recettes / my recipes booklet">
+                                <img src="<?php echo BASE_URL . '/assets/img/my.png' ?>"
+                                    alt="site web créé par lancelle clara : mon carnet de recettes / my recipes booklet">
+                            </figure>
+                            <div class="card__desc">
+                                <p class="body__desc">
+                                    J'ai réalisé ce site web dynamique et responsive durant mon année d'apprentissage du
+                                    code en autodidacte, en suivant les consignes d'une épreuve de BTS. <br>
+                                    Cette épreuve ne demandait pas de créer un site web, mais de manipuler les entrées
+                                    d'une base de donnée
+                                    et d'être en capacité de les afficher, de les modifier et de les supprimer. <br>
+                                    J'ai décidé d'en faire un site web à part entière afin de tester mes compétences et
+                                    de me confronter à de nouvelles problématiques. <br>
+                                    Avec les langages et outils suivants : HTML, CSS, PHP, MySQL, Bootstrap, PHPMyAdmin.
+                                    <br><br>
+                                    Fonctionalités : <br><br>
+                                    - Inscription, connexion, deconnexion. <br>
+                                    - Enregistrement de nouvelles recettes. <br>
+                                    - Modification de ses recettes. <br>
+                                    - Affichage de l'ensemble des recettes de la communautée. <br>
+                                    - Affichage de l'ensemble de ses recettes. <br>
                                 </p>
                             </div>
+                            <div class="card__link">
+                                <div class="github">
+                                    <p> Retrouvez ce projet sur mon dêpot GitHub : </p>
+                                    <a href="https://github.com/clara-lancelle/TD_Recipes" target="_blank"
+                                        title="lien vers le github de mon site de recettes de cuisines : mon carnet de recettes / my recipes booklet par clara Lancelle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="web">
+                                    <p> Ou en ligne à l'adresse :
+                                        <a href="https://recipes.lancelle-clara.fr/welcome_page.php"
+                                            class="website_link" target="_blank"
+                                            title="lien vers mon site de recettes de cuisines : mon carnet de recettes / my recipes booklet par clara Lanclle">
+                                            https://recipes.lancelle-clara.fr/welcome_page.php </a>
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </article>
+                    <article>
+                        <div class="card">
+                            <div class="card__title">
+                                <h5>ShiFuMi - Pierre Feuille Papier Ciseaux Lezard Spock </h5>
+                            </div>
+                            <figure class="card__img">
+                                <img src="<?php echo BASE_URL . '/assets/img/shifumi.png' ?>"
+                                    alt="site web créé par lancelle clara : shifumi - Pierre Feuille Papier Ciseaux Lezard Spock / javascript">
+                                <img src="<?php echo BASE_URL . '/assets/img/shifumi_phone.png' ?>"
+                                    alt="site web créé par lancelle clara : shifumi - Pierre Feuille Papier Ciseaux Lezard Spock / javascript">
+                                <img src="<?php echo BASE_URL . '/assets/img/shifumi_played.png' ?>"
+                                    alt="site web créé par lancelle clara : shifumi - Pierre Feuille Papier Ciseaux Lezard Spock / javascript">
+                            </figure>
+                            <div class="card__desc">
+                                <p class="body__desc">
+                                    Ce ShiFuMi est un exercice proposé durant ma formation de 'développeur web et web
+                                    mobile' <br>
+                                    Il est codé en Javascript / CSS / HTML. <br>
+
+                                    Utilisation : <br> <br>
+
+                                    Vous faites un partie de ShiFuMi contre l'ordinateur. <br>
+                                    Pour gagner la partie il faut trois victoires.
+
+                                    Fonctionalités : <br><br>
+                                    - Jouer ! <br>
+                                    - Rejouer !<br>
+                                </p>
+                            </div>
+                            <div class="card__link">
+                                <div class="github">
+                                    <p> Retrouvez ce projet sur mon dêpot GitHub : </p>
+                                    <a href="https://github.com/clara-lancelle/ShiFuMi" target="_blank"
+                                        title="lien vers le github de mon site shifumi - Pierre Feuille Papier Ciseaux Lezard Spock / javascript / par clara Lancelle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="web">
+                                    <p> Ou en ligne à l'adresse :
+                                        <a href="https://clara-lancelle.github.io/ShiFuMi/" class="website_link"
+                                            target="_blank"
+                                            title="lien vers mon site shifumi - Pierre Feuille Papier Ciseaux Lezard Spock / javascript / par clara Lancelle">
+                                            https://clara-lancelle.github.io/ShiFuMi/</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                 </div>
-            </div>
-            <div id="contact"></div>
+                </article>
+
+                <div id="contact"></div>
         </section>
 
         <section class="bloc">

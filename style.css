@@ -81,8 +81,9 @@ section.bloc--smallMargin {
 }
 
 h5 {
-  font-size: 1.2em;
-  font-weight: lighter;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  font-weight: bold;
   margin: 1em 0%;
   color: #254E70;
 }
@@ -755,6 +756,10 @@ svg.bi.bi-zoom-in:hover {
   transform: scale(1.1);
 }
 
+section.bloc .achiev__content__body {
+  display: grid;
+  row-gap: 3rem;
+}
 section.bloc .achiev__content__body .card {
   border: rgba(74, 75, 78, 0.5411764706) 2px solid;
   padding: 2%;
@@ -770,6 +775,8 @@ section.bloc .achiev__content__body .card {
 section.bloc .achiev__content__body .card__title {
   grid-row: 1;
   grid-column: 2;
+  border-bottom: solid 1px #B1DDF1;
+  height: 4rem;
 }
 @media screen and (max-width: 699px) {
   section.bloc .achiev__content__body .card__title {

@@ -14,7 +14,7 @@ if(isset($_GET['logout'])){
     header('location: log_admin.php');
 }
 
-include BASE_URL."/assets/php/handling_admin.php";
+include "php/handling_admin.php";
 
 // gestion de l'affichage/pages 
 
