@@ -87,7 +87,7 @@ h5 {
   margin: 1em 0%;
   color: #254E70;
 }
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 1120px) {
   h5 {
     font-size: 1.1em;
   }
@@ -139,8 +139,9 @@ p.return {
   text-align: center;
 }
 .btn:hover {
-  box-shadow: 5px 8px 5px rgba(37, 40, 56, 0.31);
+  box-shadow: 3px 3px 5px rgba(97, 141, 186, 0.471);
   transform: scale(1.01);
+  transition-duration: 0.5s;
 }
 
 .card--border {
@@ -357,6 +358,11 @@ header.nav_ban .navbar nav.navbar__items ul {
   padding: 0px;
   margin: 3px auto;
 }
+@media screen and (max-width: 1120px) {
+  header.nav_ban .navbar nav.navbar__items ul {
+    grid-template-columns: repeat(4, 150px);
+  }
+}
 @media screen and (max-width: 699px) {
   header.nav_ban .navbar nav.navbar__items ul {
     grid-template-columns: 1fr;
@@ -436,6 +442,11 @@ header.nav_ban .bloc__banner h3.banner__body__welcome {
 @media screen and (max-width: 699px) {
   header.nav_ban .bloc__banner h3.banner__body__welcome {
     font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  header.nav_ban .bloc__banner h3.banner__body__welcome {
+    padding: 0.3rem;
   }
 }
 header.nav_ban .bloc__banner p.banner__body__desc {
@@ -563,6 +574,12 @@ section.bloc.aboutMe .aboutMe__content__body .body__img {
   border-bottom: solid 2px #30011E;
   border-left: 4px solid #30011E;
 }
+@media screen and (max-width: 400px) {
+  section.bloc.aboutMe .aboutMe__content__body .body__img {
+    padding: 0.3rem;
+    margin: 0.5rem auto;
+  }
+}
 section.bloc.aboutMe .aboutMe__content__body .body__img img {
   width: 250px;
 }
@@ -597,22 +614,20 @@ section.bloc .skills__content__body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-auto-flow: row;
-  column-gap: 5%;
-  row-gap: 5%;
-  padding: 3%;
+  column-gap: 2rem;
+  row-gap: 2rem;
   align-content: center;
   justify-content: center;
+  margin-top: 1rem;
 }
 @media screen and (max-width: 1120px) {
   section.bloc .skills__content__body {
     grid-template-columns: 1fr 1fr;
-    padding: 3%;
-    row-gap: 1%;
+    row-gap: 1rem;
   }
 }
 @media screen and (max-width: 699px) {
   section.bloc .skills__content__body {
-    padding: 1%;
     grid-template-columns: 45% 45%;
   }
 }
@@ -679,6 +694,9 @@ section.bloc .skills__content__body .card-skills .card-skills__content .grade .p
 section.bloc .skills__content__body .card-skills .card-skills__content .grade .p60 {
   width: 60%;
 }
+section.bloc .skills__content__body .card-skills .card-skills__content .grade .p40 {
+  width: 40%;
+}
 section.bloc .skills__content .skills__degree {
   margin: 7% 0%;
 }
@@ -698,12 +716,14 @@ section.bloc .skills__content .skills__degree__content {
 @media screen and (max-width: 1120px) {
   section.bloc .skills__content .skills__degree__content {
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 8rem;
   }
 }
 @media screen and (max-width: 699px) {
   section.bloc .skills__content .skills__degree__content {
     grid-template-columns: 1fr;
     row-gap: 0%;
+    margin-bottom: auto;
   }
 }
 section.bloc .skills__content .skills__degree__content .card-degree__content {
@@ -744,6 +764,24 @@ section.bloc .skills__content .skills__degree__content .card-degree__content h3 
 }
 @media screen and (max-width: 1120px) {
   .modal img.degree--modal {
+    max-width: 550px;
+  }
+}
+.modal img.sites--modal {
+  width: 1100px;
+}
+@media screen and (max-width: 1120px) {
+  .modal img.sites--modal {
+    max-width: 650px;
+  }
+}
+@media screen and (max-width: 699px) {
+  .modal img.sites--modal {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .modal img.sites--modal {
     max-width: 250px;
   }
 }
@@ -913,7 +951,7 @@ section.bloc .contact__content__body .link:hover a.contact__link {
   }
 }
 section.bloc .contact__content__form {
-  background-color: #254E70;
+  background-color: rgba(72, 147, 210, 0.1803921569);
   padding: 1rem;
   margin: 1% 10%;
 }
@@ -927,19 +965,15 @@ section.bloc .contact__content__form {
 section.bloc .contact__content__form .form__title {
   font-size: 1rem;
   align-items: center;
-  grid-template-columns: 2rem 1fr;
   display: grid;
   grid-column-gap: 2%;
-  color: white;
+  color: #254E70;
   margin-bottom: 2%;
 }
 @media screen and (max-width: 699px) {
   section.bloc .contact__content__form .form__title {
     justify-items: center;
   }
-}
-section.bloc .contact__content__form .form__title .bi {
-  margin-right: 2%;
 }
 section.bloc .contact__content__form .form__title h3 {
   margin-top: 1%;
@@ -962,7 +996,7 @@ section.bloc .contact__content__form form {
   }
 }
 section.bloc .contact__content__form form input.form__contact__field {
-  border: rgba(85, 85, 85, 0.2117647059) solid 2px;
+  border: rgba(132, 181, 218, 0.39) solid 2px;
   background-color: rgba(255, 255, 255, 0.9333333333);
   grid-column: 1;
 }
@@ -972,7 +1006,7 @@ section.bloc .contact__content__form form input.form__contact__field {
   }
 }
 section.bloc .contact__content__form form textarea.form__contact__field {
-  border: rgba(85, 85, 85, 0.2117647059) solid 2px;
+  border: rgba(132, 181, 218, 0.39) solid 2px;
   background-color: rgba(255, 255, 255, 0.9333333333);
   grid-column: 2;
   grid-row: 1/4;
@@ -986,7 +1020,7 @@ section.bloc .contact__content__form form textarea.form__contact__field {
 section.bloc .contact__content__form form button.send {
   grid-row: 4;
   grid-column: 1/3;
-  background-color: #B1DDF1;
+  background-color: #254E70;
   color: white;
   margin: auto;
   border: none;
@@ -999,6 +1033,10 @@ section.bloc .contact__content__form form button.send {
     grid-column: 1;
     grid-row: inherit;
   }
+}
+
+p.copy-right__text {
+  color: white;
 }
 
 .log__form {

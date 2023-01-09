@@ -8,8 +8,6 @@ if (!empty($_POST)) {
     unset($_POST);
 }
 
-
-
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +17,7 @@ if (!empty($_POST)) {
     <meta charset="utf-8">
     <meta name="description"
         content="Portfolio et CV de lancelle clara, développeuse web en formation à La Manu (Compiègne).">
-    <link rel="icon" href="<?php echo BASE_URL . '/assets/img/favicon.png' ?>" type="image/png">
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <Link href="style.css" rel="stylesheet" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,8 +30,7 @@ if (!empty($_POST)) {
         <div class="navbar">
             <figure class="navbar__items__logo">
                 <a id="home_link" href="#" title="lien vers la page d'accueil">
-                    <img class="logo" src="<?php echo BASE_URL . '/assets/img/logo.png' ?>"
-                        alt="logo du portfolio de Lancelle Clara">
+                    <img class="logo" src="assets/img/logo.png" alt="logo du portfolio de Lancelle Clara">
                 </a>
             </figure>
 
@@ -99,8 +96,8 @@ if (!empty($_POST)) {
                 <div class="section-divider"></div>
                 <div class="aboutMe__content__body">
                     <p class="body__desc">
-                        Je m'appelle Clara, j'ai 24 ans et je suis en reconversion professionelle. <br>
-                        Je suis en formation de 'Développeur web et web mobile' à La Manu (école du numérique),
+                        Je m'appelle Clara, j'ai 25 ans et je suis en formation de 'Développeur web et web mobile' à La
+                        Manu (école du numérique),
                         Compiègne. <br><br>
                         Cette formation intensive permet d'obtenir un titre Professionnel d’Etat « Développeur Web et
                         Web Mobile » (RNCP 31114, Bac+2). <br> <br>
@@ -108,17 +105,16 @@ if (!empty($_POST)) {
                         developpeur via des sites internet comme OpenClassroom et Pierre Giraud. <br><br>
                         Je suis très interéssée et passionnée par les langages et logiciels que j'apprend, j'aime tester
                         mes connaissances et réaliser des projets dans lesquels je peux me confronter à de nouvelles
-                        fonctionnalitées mais aussi, à de nouvelles problématiques. <br>
+                        fonctionnalités mais aussi, à de nouvelles problématiques. <br>
                     </p>
                     <figure class="body__img myPic">
-                        <img src="<?php echo BASE_URL . '/assets/img/photo_cv.png' ?>"
-                            alt="Photo d'identité / de profil de lancelle Clara">
+                        <img src="assets/img/photo_cv.png" alt="Photo d'identité / de profil de lancelle Clara">
                     </figure>
                 </div>
                 <div class="aboutMe__content__btn btn">
-                    <a href="<?php echo BASE_URL . '/assets/img/cv_lancelle_clara_2.pdf' ?>" class="cv__btn"
-                        target="_blank" title="CV de clara lancelle"> Mon CV <svg xmlns="http://www.w3.org/2000/svg"
-                            width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
+                    <a href="assets/img/cv_lancelle_clara.pdf" class="cv__btn" target="_blank"
+                        title="CV de clara lancelle"> Mon CV <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            height="16" fill="currentColor" class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
                                 d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5zm-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5z" />
                         </svg></a>
@@ -170,6 +166,19 @@ if (!empty($_POST)) {
                             <div class="grade">
                                 <div class="progress p60">
                                     <p> 60% </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-skills">
+                        <div class="card-skills__content">
+                            <figure class="card-skills__content__img">
+                                <img class="logo" src="assets/img/react_logo.png" alt="logo React js">
+                            </figure>
+                            <h5>React JS</h5>
+                            <div class="grade">
+                                <div class="progress p40">
+                                    <p> 40% </p>
                                 </div>
                             </div>
                         </div>
@@ -253,6 +262,19 @@ if (!empty($_POST)) {
                             </div>
                         </div>
                     </div>
+                    <div class="card-skills">
+                        <div class="card-skills__content">
+                            <figure class="card-skills__content__img">
+                                <img class="logo" src="assets/img/WordPress_logo.png" alt="logo WordPress">
+                            </figure>
+                            <h5>WordPress</h5>
+                            <div class="grade">
+                                <div class="progress p60">
+                                    <p> 60% </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
                 <?php $i = 0; ?>
@@ -264,11 +286,10 @@ if (!empty($_POST)) {
                             <div class="card-degree__content">
                                 <h5> HTML 5 et CSS 3 </h5>
                                 <figure class="card-degree__content__img">
-                                    <img class="degree" src="<?php echo BASE_URL . '/assets/img/op_html_css.png' ?>"
+                                    <img class="degree" src="assets/img/op_html_css.png"
                                         alt="diplome HTML CSS lancelle clara OpenClassroom">
                                     <div id="modal__img<?= $i ?>" class="modal">
-                                        <img class="degree--modal"
-                                            src="<?php echo BASE_URL . '/assets/img/op_html_css.png' ?>"
+                                        <img class="degree--modal" src="assets/img/op_html_css.png"
                                             alt="diplome HTML CSS lancelle clara OpenClassroom">
                                         <a href="#" rel="modal:close"></a>
                                     </div>
@@ -292,11 +313,10 @@ if (!empty($_POST)) {
                             <div class="card-degree__content">
                                 <h5> PHP et MySQL </h5>
                                 <figure class="card-degree__content__img">
-                                    <img class="degree" src="<?php echo BASE_URL . '/assets/img/op_php_mysql.png' ?>"
+                                    <img class="degree" src="assets/img/op_php_mysql.png"
                                         alt="diplome PHP/MYSQL lancelle clara OpenClassroom">
                                     <div id="modal__img<?php echo $i; ?>" class="modal">
-                                        <img class="degree--modal"
-                                            src="<?php echo BASE_URL . '/assets/img/op_php_mysql.png' ?>"
+                                        <img class="degree--modal" src="assets/img/op_php_mysql.png"
                                             alt="diplome PHP/MYSQL lancelle clara OpenClassroom">
                                         <a href="#" rel="modal:close"></a>
                                     </div>
@@ -320,11 +340,10 @@ if (!empty($_POST)) {
                             <div class="card-degree__content">
                                 <h5> SASS </h5>
                                 <figure class="card-degree__content__img">
-                                    <img class="degree" src="<?php echo BASE_URL . '/assets/img/op_sass.png' ?>"
+                                    <img class="degree" src="assets/img/op_sass.png"
                                         alt="diplome SASS lancelle clara OpenClassroom">
                                     <div id="modal__img<?php echo $i; ?>" class="modal">
-                                        <img class="degree--modal"
-                                            src="<?php echo BASE_URL . '/assets/img/op_sass.png' ?>"
+                                        <img class="degree--modal" src="assets/img/op_sass.png"
                                             alt="diplome SASS lancelle clara OpenClassroom">
                                         <a href="#" rel="modal:close"></a>
                                     </div>
@@ -347,11 +366,10 @@ if (!empty($_POST)) {
                             <div class="card-degree__content card__content">
                                 <h5> Bootstrap </h5>
                                 <figure class="card-degree__content__img">
-                                    <img class="degree" src="<?php echo BASE_URL . '/assets/img/op_bootstrap.png' ?>"
+                                    <img class="degree" src="assets/img/op_bootstrap.png"
                                         alt="diplome BOOTSTRAP lancelle clara OpenClassroom">
                                     <div id="modal__img<?php echo $i; ?>" class="modal">
-                                        <img class="degree--modal"
-                                            src="<?php echo BASE_URL . '/assets/img/op_bootstrap.png' ?>"
+                                        <img class="degree--modal" src="assets/img/op_bootstrap.png"
                                             alt="diplome BOOTSTRAP lancelle clara OpenClassroom">
                                         <a href="#" rel="modal:close"></a>
                                     </div>
@@ -374,11 +392,10 @@ if (!empty($_POST)) {
                             <div class="card-degree__content card__content">
                                 <h5> Modélisation de Bases de Données </h5>
                                 <figure class="card-degree__content__img">
-                                    <img class="degree" src="<?php echo BASE_URL . '/assets/img/op_bdd.png' ?>"
+                                    <img class="degree" src="assets/img/op_bdd.png"
                                         alt="diplome conception de Base de données lancelle clara OpenClassroom">
                                     <div id="modal__img<?php echo $i; ?>" class="modal">
-                                        <img class="degree--modal"
-                                            src="<?php echo BASE_URL . '/assets/img/op_bdd.png' ?>"
+                                        <img class="degree--modal" src="assets/img/op_bdd.png"
                                             alt="diplome conception de Base de données lancelle clara OpenClassroom">
                                         <a href="#" rel="modal:close"></a>
                                     </div>
@@ -402,12 +419,10 @@ if (!empty($_POST)) {
                             <div class="card-degree__content card__content">
                                 <h5> Comprendre le Web </h5>
                                 <figure class="card-degree__content__img">
-                                    <img class="degree"
-                                        src="<?php echo BASE_URL . '/assets/img/op_comprendre_le_web.png' ?>"
+                                    <img class="degree" src="assets/img/op_comprendre_le_web.png"
                                         alt="diplome comprendre le web lancelle clara OpenClassroom">
                                     <div id="modal__img<?php echo $i; ?>" class="modal">
-                                        <img class="degree--modal"
-                                            src="<?php echo BASE_URL . '/assets/img/op_comprendre_le_web.png' ?>"
+                                        <img class="degree--modal" src="assets/img/op_comprendre_le_web.png"
                                             alt="diplome comprendre le web lancelle clara OpenClassroom">
                                         <a href="#" rel="modal:close"></a>
                                     </div>
@@ -423,6 +438,7 @@ if (!empty($_POST)) {
                                             </svg>
                                         </a>
                                     </p>
+                                    <?php $i++; ?>
                                 </figure>
                                 <div id="réalisations"></div>
                             </div>
@@ -446,12 +462,38 @@ if (!empty($_POST)) {
                                 <h5>Carnet de recettes partagées</h5>
                             </div>
                             <figure class="card__img">
-                                <img src="<?php echo BASE_URL . '/assets/img/co.png' ?>"
-                                    alt="site web créé par lancelle clara : Mon carnet de recettes / My recipes booklet">
-                                <img src="<?php echo BASE_URL . '/assets/img/screen.png' ?>"
-                                    alt="site web créé par lancelle clara : mon carnet de recettes / my recipes booklet">
-                                <img src="<?php echo BASE_URL . '/assets/img/my.png' ?>"
-                                    alt="site web créé par lancelle clara : mon carnet de recettes / my recipes booklet">
+                                <a href="#modal__img<?php echo $i; ?>" rel="modal:open">
+                                    <img src="assets/img/co.png"
+                                        alt="site web créé par lancelle clara : Mon carnet de recettes / My recipes booklet">
+                                </a>
+                                <div id="modal__img<?php echo $i; ?>" class="modal">
+                                    <img class="sites--modal" src="assets/img/co.png"
+                                        alt="site web créé par lancelle clara : Mon carnet de recettes / My recipes booklet">
+                                    <a href="#" rel="modal:close"></a>
+                                </div>
+                                <?php $i++; ?>
+
+                                <a href="#modal__img<?php echo $i; ?>" rel="modal:open">
+                                    <img src="assets/img/screen.png"
+                                        alt="site web créé par lancelle clara : mon carnet de recettes / my recipes booklet">
+                                </a>
+                                <div id="modal__img<?php echo $i; ?>" class="modal">
+                                    <img class="sites--modal" src="assets/img/screen.png"
+                                        alt="site web créé par lancelle clara : Mon carnet de recettes / My recipes booklet">
+                                    <a href="#" rel="modal:close"></a>
+                                </div>
+                                <?php $i++; ?>
+
+                                <a href="#modal__img<?php echo $i; ?>" rel="modal:open">
+                                    <img src="assets/img/my.png"
+                                        alt="site web créé par lancelle clara : mon carnet de recettes / my recipes booklet">
+                                </a>
+                                <div id="modal__img<?php echo $i; ?>" class="modal">
+                                    <img class="sites--modal" src="assets/img/my.png"
+                                        alt="site web créé par lancelle clara : Mon carnet de recettes / My recipes booklet">
+                                    <a href="#" rel="modal:close"></a>
+                                </div>
+                                <?php $i++; ?>
                             </figure>
                             <div class="card__desc">
                                 <p class="body__desc">
@@ -501,12 +543,39 @@ if (!empty($_POST)) {
                                 <h5>ShiFuMi - Pierre Feuille Papier Ciseaux Lezard Spock </h5>
                             </div>
                             <figure class="card__img">
-                                <img src="<?php echo BASE_URL . '/assets/img/shifumi.png' ?>"
-                                    alt="site web créé par lancelle clara : shifumi - Pierre Feuille Papier Ciseaux Lezard Spock / javascript">
-                                <img src="<?php echo BASE_URL . '/assets/img/shifumi_phone.png' ?>"
-                                    alt="site web créé par lancelle clara : shifumi - Pierre Feuille Papier Ciseaux Lezard Spock / javascript">
-                                <img src="<?php echo BASE_URL . '/assets/img/shifumi_played.png' ?>"
-                                    alt="site web créé par lancelle clara : shifumi - Pierre Feuille Papier Ciseaux Lezard Spock / javascript">
+
+                                <a href="#modal__img<?php echo $i; ?>" rel="modal:open">
+                                    <img src="assets/img/shifumi.png"
+                                        alt="site web créé par lancelle clara : shifumi - Pierre Feuille Papier Ciseaux Lezard Spock / javascript">
+                                </a>
+                                <div id="modal__img<?php echo $i; ?>" class="modal">
+                                    <img class="sites--modal" src="assets/img/shifumi.png"
+                                        alt="site web créé par lancelle clara : shifumi - Pierre Feuille Papier Ciseaux Lezard Spock / javascript">
+                                    <a href="#" rel="modal:close"></a>
+                                </div>
+                                <?php $i++; ?>
+
+                                <a href="#modal__img<?php echo $i; ?>" rel="modal:open">
+                                    <img src="assets/img/shifumi_phone.png"
+                                        alt="site web créé par lancelle clara : shifumi - Pierre Feuille Papier Ciseaux Lezard Spock / javascript">
+                                </a>
+                                <div id="modal__img<?php echo $i; ?>" class="modal">
+                                    <img class="sites--modal" src="assets/img/shifumi_phone.png"
+                                        alt="site web créé par lancelle clara : shifumi - Pierre Feuille Papier Ciseaux Lezard Spock / javascript">
+                                    <a href="#" rel="modal:close"></a>
+                                </div>
+                                <?php $i++; ?>
+
+                                <a href="#modal__img<?php echo $i; ?>" rel="modal:open">
+                                    <img src="assets/img/shifumi_played.png"
+                                        alt="site web créé par lancelle clara : shifumi - Pierre Feuille Papier Ciseaux Lezard Spock / javascript">
+                                </a>
+                                <div id="modal__img<?php echo $i; ?>" class="modal">
+                                    <img class="sites--modal" src="assets/img/shifumi_played.png"
+                                        alt="site web créé par lancelle clara : shifumi - Pierre Feuille Papier Ciseaux Lezard Spock / javascript">
+                                    <a href="#" rel="modal:close"></a>
+                                </div>
+                                <?php $i++; ?>
                             </figure>
                             <div class="card__desc">
                                 <p class="body__desc">
@@ -517,7 +586,12 @@ if (!empty($_POST)) {
                                     Utilisation : <br> <br>
 
                                     Vous faites un partie de ShiFuMi contre l'ordinateur. <br>
-                                    Pour gagner la partie il faut trois victoires.
+
+                                    Cette version est inspirée de la serie 'The Big Bang Theory' et possède 5
+                                    possibilités de coups : <br>
+                                    pierre - papier - ciseaux - lezard - spock. <br>
+                                    Les règles sont expliquées sur le site. <br>
+                                    Pour gagner la partie il vous faudra trois victoires. <br><br>
 
                                     Fonctionalités : <br><br>
                                     - Jouer ! <br>
@@ -538,18 +612,163 @@ if (!empty($_POST)) {
                                 </div>
                                 <div class="web">
                                     <p> Ou en ligne à l'adresse :
-                                        <a href="https://clara-lancelle.github.io/ShiFuMi/" class="website_link"
+                                        <a href="https://shifumi.lancelle-clara.fr/" class="website_link"
                                             target="_blank"
                                             title="lien vers mon site shifumi - Pierre Feuille Papier Ciseaux Lezard Spock / javascript / par clara Lancelle">
-                                            https://clara-lancelle.github.io/ShiFuMi/</a>
+                                            https://shifumi.lancelle-clara.fr/</a>
                                     </p>
                                 </div>
                             </div>
                         </div>
-                </div>
-                </article>
+                    </article>
+                    <article>
+                        <div class="card">
+                            <div class="card__title">
+                                <h5> Amaranth - Art come from the soul </h5>
+                            </div>
+                            <figure class="card__img">
 
-                <div id="contact"></div>
+                                <a href="#modal__img<?php echo $i; ?>" rel="modal:open">
+                                    <img src="assets/img/amaranth_home.png"
+                                        alt="site web créé par lancelle clara : Amaranth - Art come from the soul / Wordpress">
+                                </a>
+                                <div id="modal__img<?php echo $i; ?>" class="modal">
+                                    <img class="sites--modal" src="assets/img/amaranth_home.png"
+                                        alt="site web créé par lancelle clara : Amaranth - Art come from the soul / Wordpress">
+                                    <a href="#" rel="modal:close"></a>
+                                </div>
+                                <?php $i++; ?>
+
+                                <a href="#modal__img<?php echo $i; ?>" rel="modal:open">
+                                    <img src="assets/img/amaranth_phone_contact.png"
+                                        alt="site web créé par lancelle clara : Amaranth - Art come from the soul / Wordpress">
+                                </a>
+                                <div id="modal__img<?php echo $i; ?>" class="modal">
+                                    <img class="sites--modal" src="assets/img/amaranth_phone_contact.png"
+                                        alt="site web créé par lancelle clara : Amaranth - Art come from the soul / Wordpress">
+                                    <a href="#" rel="modal:close"></a>
+                                </div>
+                                <?php $i++; ?>
+
+                                <a href="#modal__img<?php echo $i; ?>" rel="modal:open">
+                                    <img src="assets/img/amaranth_shop.png"
+                                        alt="site web créé par lancelle clara : Amaranth - Art come from the soul / Wordpress">
+                                </a>
+                                <div id="modal__img<?php echo $i; ?>" class="modal">
+                                    <img class="sites--modal" src="assets/img/amaranth_shop.png"
+                                        alt="site web créé par lancelle clara : Amaranth - Art come from the soul / Wordpress">
+                                    <a href="#" rel="modal:close"></a>
+                                </div>
+                                <?php $i++; ?>
+                            </figure>
+                            <div class="card__desc">
+                                <p class="body__desc">
+                                    Ce <em>Site web e-commerce Wordpress</em> est un exercice proposé durant ma
+                                    formation de
+                                    'développeur web et web
+                                    mobile' <br><br><br>
+                                    Il est entièrement réalisé via le CMS Wordpress. <br>
+                                    Le constructeur de page Elementor a été utilisé pour concevoir ce site web. <br>
+                                    L'extention <em>WooCommerce</em> m'a permis de réaliser la partie e-commerce de ce
+                                    site
+                                    (panier, produits, boutique, ..), <br>
+                                    l'extention <em>Contact Form 7 </em> m'a aidé à réaliser le formulaire de contact.
+                                    <br><br>
+                                    Amaranth est le site web d'un artiste parisien souhaitant faire connaitre son
+                                    travail,
+                                    ses actualitées mais aussi vendre ses oeuvre. <br><br><br><br>
+
+                                    Nb : Amaranth traite d'une entreprise fictive, toutes les images sont libres de
+                                    droit.
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="card">
+                            <div class="card__title">
+                                <h5> Calendar - Generateur de calendrier PHP methode MVC</h5>
+                            </div>
+                            <figure class="card__img">
+
+                                <a href="#modal__img<?php echo $i; ?>" rel="modal:open">
+                                    <img src="assets/img/calendar.png"
+                                        alt="site web créé par lancelle clara : Calendar - générateur de calendrier PHP méthode MVC">
+                                </a>
+                                <div id="modal__img<?php echo $i; ?>" class="modal">
+                                    <img class="sites--modal" src="assets/img/calendar.png"
+                                        alt="site web créé par lancelle clara : Calendar - générateur de calendrier PHP méthode MVC">
+                                    <a href="#" rel="modal:close"></a>
+                                </div>
+                                <?php $i++; ?>
+
+                                <a href="#modal__img<?php echo $i; ?>" rel="modal:open">
+                                    <img src="assets/img/calendar_phone.png"
+                                        alt="site web créé par lancelle clara : Calendar - générateur de calendrier PHP méthode MVC">
+                                </a>
+                                <div id="modal__img<?php echo $i; ?>" class="modal">
+                                    <img class="sites--modal" src="assets/img/calendar_phone.png"
+                                        alt="site web créé par lancelle clara : Calendar - générateur de calendrier PHP méthode MVC">
+                                    <a href="#" rel="modal:close"></a>
+                                </div>
+                                <?php $i++; ?>
+
+                                <a href="#modal__img<?php echo $i; ?>" rel="modal:open">
+                                    <img src="assets/img/calendar_empty.png"
+                                        alt="site web créé par lancelle clara : Calendar - générateur de calendrier PHP méthode MVC">
+                                </a>
+                                <div id="modal__img<?php echo $i; ?>" class="modal">
+                                    <img class="sites--modal" src="assets/img/calendar_empty.png"
+                                        alt="site web créé par lancelle clara : Calendar - générateur de calendrier PHP méthode MVC">
+                                    <a href="#" rel="modal:close"></a>
+                                </div>
+                                <?php $i++; ?>
+                            </figure>
+                            <div class="card__desc">
+                                <p class="body__desc">
+                                    Ce <em>Calendrier réalisé en PHP</em> est un exercice proposé durant ma
+                                    formation de
+                                    'développeur web et web
+                                    mobile' <br><br><br>
+                                    Il est entièrement réalisé en HTML / CSS / PHP .<br>
+                                    J'ai d'abord réalisé cet exercice comme demandé dans l'énoncé (sans PHP orienté
+                                    objet).<br>
+                                    J'ai ensuite décidé de transformer mon travail avec la méthode Model View Controller
+                                    afin
+                                    d'obtenir un calendrier en POO.
+                                    <br>
+                                    Pour l'utiliser il suffit de fournir un mois, une année et grâce à l'algorithme mis
+                                    en place, il génère le calendrier demandé entre 1900 et aujourd'hui. <br> <br>
+                                </p>
+                            </div>
+                            <div class="card__link">
+                                <div class="github">
+                                    <p> Retrouvez ce projet sur mon dêpot GitHub : </p>
+                                    <a href="https://github.com/clara-lancelle/Calendar" target="_blank"
+                                        title="lien vers le github de Calendar - générateur de calendrier PHP méthode MVC par clara Lancelle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="web">
+                                    <p> Ou en ligne à l'adresse :
+                                        <a href="https://calendar.lancelle-clara.fr/" class="website_link"
+                                            target="_blank"
+                                            title="lien vers le site web de Calendar - générateur de calendrier PHP méthode MVC par clara Lancelle">
+                                            https://calendar.lancelle-clara.fr/</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <div id="contact"></div>
+                </div>
+            </div>
         </section>
 
         <section class="bloc">
@@ -581,14 +800,7 @@ if (!empty($_POST)) {
                     </div>
                 </div>
                 <div class="contact__content__form">
-                    <div class="form__title svg">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-chat-square-text" viewBox="0 0 16 16">
-                            <path
-                                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
-                            <path
-                                d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
-                        </svg>
+                    <div class="form__title">
                         <h5>Vous pouvez aussi me transmettre un message via ce formulaire :</h5>
                     </div>
                     <?php
@@ -630,7 +842,7 @@ if (!empty($_POST)) {
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <script src="<?php echo BASE_URL . '/assets/js/index.js' ?>"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>

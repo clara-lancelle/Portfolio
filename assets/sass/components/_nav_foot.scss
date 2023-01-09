@@ -52,6 +52,11 @@ header.nav_ban {
                 padding: 0px;
                 margin: 3px auto;
 
+
+
+                @include smallScreen {
+                    grid-template-columns: repeat(4, 150px);
+                }
                 @include x_smallScreen {
                     grid-template-columns: 1fr;
                 }
@@ -137,6 +142,10 @@ header.nav_ban {
 
             @include x_smallScreen {
                 font-size: 1.3rem;
+            }
+
+            @include xx_smallScreen {
+                padding: 0.3rem;
             }
 
         }

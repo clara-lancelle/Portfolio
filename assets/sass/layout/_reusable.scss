@@ -88,7 +88,8 @@ h5{
     font-weight: bold;
     margin: 1em 0%;
     color: $dark_blue;
-    @include x_smallScreen{
+   
+    @include smallScreen{
         font-size: 1.1em;
      }
 }
@@ -141,8 +142,9 @@ p.return{
     text-align: center;
 
     &:hover{
-        box-shadow: 5px 8px 5px rgba(37, 40, 56, 0.31);
+        box-shadow: 3px 3px 5px rgba(97, 141, 186, 0.471);
         transform: scale(1.01);
+        transition-duration: 0.5s;
     }
 
 }

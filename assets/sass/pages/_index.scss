@@ -32,6 +32,11 @@ section.bloc.aboutMe {
             border-bottom: solid 2px $nav_foot;
             border-left: 4px solid $nav_foot;
 
+           @include xx_smallScreen {
+            padding: 0.3rem;
+            margin:0.5rem auto
+           }
+
             img {
                 width: 250px;
 
@@ -78,20 +83,18 @@ section.bloc .skills__content {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-auto-flow: row;
-        column-gap: 5%;
-        row-gap: 5%;
-        padding: 3%;
+        column-gap: 2rem;
+        row-gap: 2rem;
         align-content: center;
         justify-content: center;
+        margin-top : 1rem;
 
         @include smallScreen {
             grid-template-columns: 1fr 1fr;
-            padding: 3%;
-            row-gap: 1%;
+            row-gap: 1rem;
         }
 
         @include x_smallScreen {
-            padding: 1%;
             grid-template-columns: 45% 45%;
 
         }
@@ -166,6 +169,9 @@ section.bloc .skills__content {
                     .p60 {
                         width: 60%;
                     }
+                    .p40 {
+                        width: 40%;
+                    }
                 }
 
 
@@ -191,11 +197,13 @@ section.bloc .skills__content {
 
             @include smallScreen {
                 grid-template-columns: 1fr 1fr;
+                margin-bottom: 8rem;
             }
 
             @include x_smallScreen {
                 grid-template-columns: 1fr;
                 row-gap: 0%;
+                margin-bottom: auto;
             }
 
             .card-degree__content {
@@ -246,8 +254,22 @@ section.bloc .skills__content {
         width: 700px;
 
         @include smallScreen {
+            max-width: 550px;
+        }
+    }
+    img.sites--modal {
+        width: 1100px;
+
+        @include smallScreen {
+            max-width: 650px;
+        }
+        @include x_smallScreen {
+            max-width: 300px;
+        }
+        @include xx_smallScreen {
             max-width: 250px;
         }
+        
     }
 
 }
@@ -289,6 +311,7 @@ section.bloc .achiev__content {
                 grid-column: 2;
                 border-bottom: solid 1px $light_blue;
                 height: 4rem;
+                
 
                 @include x_smallScreen {
                     grid-row: 1;
@@ -451,7 +474,7 @@ section.bloc .contact__content {
     }
 
     &__form {
-        background-color: $dark_blue;
+        background-color: #4893d22e;
         padding: 1rem;
         margin: 1% 10%;
 
@@ -465,18 +488,13 @@ section.bloc .contact__content {
         .form__title {
             font-size: 1rem;
             align-items: center;
-            grid-template-columns: 2rem 1fr;
             display: grid;
             grid-column-gap: 2%;
-            color: white;
+            color: $dark_blue;
             margin-bottom: 2%;
 
             @include x_smallScreen {
                 justify-items: center;
-            }
-
-            .bi {
-                margin-right: 2%;
             }
 
             h3 {
@@ -503,7 +521,7 @@ section.bloc .contact__content {
             }
 
             input.form__contact__field {
-                border: #55555536 solid 2px;
+                border:rgb(132 181 218 / 39%) solid 2px;;
                 background-color: $white_op;
                 grid-column: 1;
 
@@ -513,7 +531,7 @@ section.bloc .contact__content {
             }
 
             textarea.form__contact__field {
-                border: #55555536 solid 2px;
+                border:rgb(132 181 218 / 39%) solid 2px;;
                 background-color: $white_op;
                 grid-column: 2;
                 grid-row: 1/4;
@@ -527,7 +545,7 @@ section.bloc .contact__content {
             button.send {
                 grid-row: 4;
                 grid-column: 1/3;
-                background-color: $light_blue;
+                background-color: $dark_blue;
                 color: white;
                 margin: auto;
                 border: none;
@@ -544,4 +562,8 @@ section.bloc .contact__content {
 
         }
     }
+}
+
+p.copy-right__text {
+    color: white;
 }
